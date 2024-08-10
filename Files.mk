@@ -1,2 +1,2 @@
 FILES	=																	\
-	Main																	\
+	LibraryLoader Main TerminalManager										\
