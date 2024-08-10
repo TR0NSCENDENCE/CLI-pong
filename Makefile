@@ -1,14 +1,11 @@
 TARGET			:=	target/cli-pong-1.0.jar
-
 SOURCE_PATH		:=	src/main/java/org/tr0nscendence/clipong
-
 RESOURCE_DIR	:=	src/main/resources
 
-FILES			:=	Main
+include Files.mk
+include lib.mk
 
 FILES			:=	$(addsuffix .java, $(addprefix $(SOURCE_PATH)/, $(FILES)))
-
-include lib.mk
 
 .PHONY: all run clean
 
